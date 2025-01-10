@@ -8,5 +8,31 @@
   </div>
   
   {% include analytics.html %}
+
+<script>
+    function setLanguage(lang) {
+      document.cookie = "lang=" + lang + "; path=/";
+      location.reload();
+    }
+
+    function getLanguage() {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; lang=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const lang = getLanguage();
+      if (lang) {
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.post').forEach(post => {
+          if (post.dataset.lang !== lang) {
+            post.style.display = 'none';
+          }
+        });
+      }
+    });
+</script>
+  
 </body>
 </html>

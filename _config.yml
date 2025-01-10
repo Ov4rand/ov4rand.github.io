@@ -18,6 +18,16 @@ social-github: Ov4rand # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email: maksymgladkyi@gmail.com # add your Email address
 
+defaults:
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+  - scope:
+      path: "uk"
+    values:
+      lang: "uk"
+
 # Disqus
 discus-identifier: Overand # add your discus identifier
 
