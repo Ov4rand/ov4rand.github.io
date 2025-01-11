@@ -2,6 +2,7 @@
 layout: post
 title: UKRddddddddddd
 date: 2024-12-30-10-57-48
+lang: "uk"
 description: ddddddddddd
 img: https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg
 fig-caption: 
